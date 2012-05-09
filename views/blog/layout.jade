@@ -1,0 +1,67 @@
+!!!
+html
+	head
+		title
+			The blog
+		meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+		meta( name="viewport", content="width=device-width, initial-scale=1.0")
+		meta( name="description", content="")
+		meta( name="author", content="")
+
+		// Le HTML5 shim, for IE6-8 support of HTML elements 
+		
+		//[if lt IE 9]
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+		// Le styles
+		link(href="http://bootswatch.com/journal/bootstrap.min.css", rel="stylesheet")
+		link(href="http://bootswatch.com/assets/css/bootstrap-responsive.css", rel="stylesheet")
+		link(href="http://bootswatch.com/css/docs.css", rel="stylesheet")
+		// link(rel="stylesheet", href="/stylesheets/style.css")
+	
+	body(data-spy="scroll", data-target=".subnav", data-offset="50")
+		div.navbar.navbar-fixed-top
+			div.navbar-inner
+				div.container
+					a(class="brand",href="../") Andy Jarrett
+
+
+		div.container
+			header(class="jumbotron subhead",id="overview")
+				h1 The blog of ...
+				p.lead CFML, Js, Node, and other stuff
+				div.subnav
+					ul(class="nav nav-pills")
+						li 
+							a(href="http://www.thrustvps.com/", title="UK VPS Hosting") VPS Hosting
+						li.dropdown
+							a(href="#", title="Find Andy Jarrett", class="dropdown-toggle",data-toggle="dropdown") Find me 
+								b.caret
+							ul.dropdown-menu
+								li
+									a( href="") RSS
+								li.divider
+								li
+									a(href="http://www.twitter.com/andyj") Twitter @andyj
+								li
+									a(href="http://identi.ca/andyj") identi.ca @andyj
+								li
+									a(href="http://www.flickr.com/people/andyjarrett/") Flickr
+								li
+									a(href="http://stackoverflow.com/users/371761/andy-jarrett") Stack Overflow
+								li.divider
+								li
+									a() Contact me
+
+
+
+			div!= body
+
+
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+		script(src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js")
+		script(src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js")
+		script(src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js")
+		script(src="javascripts/applications.js")
+
+

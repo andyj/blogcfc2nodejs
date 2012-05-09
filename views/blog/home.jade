@@ -1,0 +1,11 @@
+-for (var i in result)
+	- var row = result[i]
+	- var body = row.body
+
+	section(id=#{row.alias})
+		div.page-header
+			h2 
+				a(href='/post/#{row.alias}') #{row.title}
+	
+	div!= body.toLowerCase()
+
